@@ -8,6 +8,15 @@ export default defineConfig({
   },
   output: {
     ssg: true,
+    distPath: {
+      html: './',
+    },
+  },
+  html: {
+    outputStructure: 'flat',
+  },
+  server: {
+    ssr: process.env.NODE_ENV === 'development',
   },
   plugins: [
     appTools({
