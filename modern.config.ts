@@ -6,8 +6,19 @@ export default defineConfig({
   runtime: {
     router: true,
   },
+  server: {
+    ssr: process.env.NODE_ENV === 'development',
+  },
   output: {
-    ssg: true,
+    ssg: {
+      routes: [
+        '/',
+        {
+          url: '/item/:id',
+          params: [{ id: '1' }, { id: '2' }, { id: '3' }],
+        },
+      ],
+    },
     distPath: {
       html: './',
     },

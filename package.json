@@ -6,7 +6,7 @@
     "dev": "modern dev",
     "build": "modern build",
     "start": "modern start",
-    "serve": "modern serve",
+    "preview": "modern serve",
     "new": "modern new",
     "lint": "biome check . --write",
     "prepare": "simple-git-hooks",
