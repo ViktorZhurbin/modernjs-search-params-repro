@@ -6,9 +6,9 @@ export default defineConfig({
   runtime: {
     router: true,
   },
-  server: {
-    ssr: process.env.NODE_ENV === 'development',
-  },
+  // server: {
+  //   ssr: process.env.NODE_ENV === 'development',
+  // },
   output: {
     ssg: {
       routes: [
